@@ -19,9 +19,13 @@ const mixedNumbers = [6,3,1,7,5,2,6,8,9,4,2,7,9,3,1,8,4,3];
   function(element, index, wholeArray){}  Function Form
   (element, index, wholeArray)=>{}    Arrow Form
 */
-
+function isEven(value, index, array){
+  if(value % 2 === 0){
+    return value;
+  }
+}
 //Code Here
-let evenNumbers // = mixedNumbers.filter(/* Provide Your Callback Here */)
+let evenNumbers = mixedNumbers.filter(isEven)// = mixedNumbers.filter(/* Provide Your Callback Here */)
 
 
 
@@ -42,9 +46,10 @@ const prices = [15.00, 23.00, 78.00, 34.00, 12.00, 86.00, 12.00, 79.00, 32.00];
   function(element, index, wholeArray){}  Function Form
   (element, index, wholeArray)=>{}    Arrow Form
 */
-
+var tax = prices.map(price => price * 1.07);
+console.log(tax);
 //Code Here
-let postTaxPrices // = prices.map(/* Provide Your Callback Here );
+let postTaxPrices = tax; // = prices.map(/* Provide Your Callback Here );
 
 
 
@@ -61,9 +66,11 @@ const populations = [8175133, 3792621, 2695598, 2100263];
   function(runningTotal, curElement, curIndex, wholeArray){} Function Form
   (runningTotal, curElement, curIndex, wholeArray)=>{} Arrow Form
 */
-
+var sum = populations.reduce(function(total,pop){
+  return total+=pop;
+})
 //Code Here
-let totalPopulation //  = populations.reduce(/* Provide Your Callback Here */)
+let totalPopulation =sum//  = populations.reduce(/* Provide Your Callback Here */)
 
 
 

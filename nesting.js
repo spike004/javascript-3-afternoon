@@ -49,7 +49,20 @@ var employees = [
     2. If the employee's first name is Lorie, change her department to 'HR'.
     3. Return the updated employee array.
 */
+function employeeUpdater(){
+  for( var i = 0 ; i < employees.length; i++){
+    if ( employees[i].firstName=== "Theo"){
+      employees.splice(i,1);
+    }
+    if (employees[i].firstName === "Lorie"){
+      employees[i].department = 'HR';
+    }
+  }
+  return employees;
+}
 
+employeeUpdater(employees);
+  
 //Code Here
 
 
@@ -67,6 +80,15 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
     2. Use nested for loops to check for duplicate numbers, and then remove the duplicates from the array.
     3. Return the updated array.
 */
+function removeDuplicates(arr){
+  for(var i = 0;i<arr.length;i++){
+    if(arr.i===arr.i){
+     return arr.splice(i,1);
+      
+    }
+  }
+  
+}
 
 //Code Here
 

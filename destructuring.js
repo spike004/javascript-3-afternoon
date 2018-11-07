@@ -20,7 +20,10 @@ var carDetails = {
 /*
   Use object destructuring to save the property values from the object carDetails into new variables. 
 */
-
+var color = carDetails.color;
+var make = carDetails.make;
+var model = carDetails.model;
+var year = carDetails.year;
 //Code Here
 
 
@@ -35,7 +38,9 @@ var carDetails = {
 
 function greeting( obj ) {
   //Code Here
-  
+  var firstName = obj.firstName;
+  var lastName = obj.lastName;
+  var title = obj.title;
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -52,7 +57,13 @@ function greeting( obj ) {
   Use object destructuring to save the property values to new variables.
   Sum up the values and return the total number.
 */
-
+function totalPopulation(obj){
+  var utah=obj.utah;
+  var california = obj.california;
+  var texas = obj.texas;
+  var arizona = obj.arizona;
+  return utah +california+ texas+ arizona;
+}
 //Code Here
 
 
@@ -66,7 +77,14 @@ function greeting( obj ) {
   Use object destructuring to save the property values to new variables. 
   Push these new variables to an array and return the array. 
 */
-
+function ingredients(obj){
+  var carb = obj.carb;
+  var fat = obj.fat;
+  var protein = obj.protein;
+  var arr=[];
+  arr.push(carb,fat,protein);
+  return arr
+}
 //Code Here
 
 
@@ -84,7 +102,9 @@ function greeting( obj ) {
   The object properties will be named first, second, and third and their values will be numbers.
   Find the smallest number of the three and return that number.
 */
-
+function largeNumbers( {first, second, third } ){
+  return Math.min(first,second,third);
+}
 //Code Here
 
 
@@ -96,7 +116,17 @@ function greeting( obj ) {
   The object properties will be named a, b, and c and their values will be arrays of numbers.
   Find the longest array and return that array.
 */
+function numberGroups({obj}){
+  var a=[];
+  var b=[];
+  var c =[];
+a.push.length(obj.a);
+b.push.length(obj.b);
+c.push.length(obj.c)
+return Math.max(a,b,c)
 
+  
+}
 //Code Here
 
 

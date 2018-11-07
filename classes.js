@@ -28,7 +28,18 @@
 
   Call your class Employee and receive all the data in the constructor in the order listed above.
 */
-
+class Employee {
+  constructor(first_name,last_name,email,age){
+    this.first_name=first_name;
+    this.last_name=last_name;
+    this.email=email;
+    this.age=age;
+    this.makeWidget=function(){
+return first_name + ' ' + last_name + ' Widget';
+    }
+  }
+} var newUser = new Employee('Robert','Irving','irv@dm.com',25);
+  console.log(newUser)
 //Code Here
 
 
@@ -48,6 +59,24 @@
 
   Call your new class Manager
 */
+class Manager {
+  constructor(first_name,last_name,email,age){
+    this.first_name=first_name;
+    this.last_name=last_name;
+    this.email=email;
+    this.age=age;
+    this.reports=[];
+    this.makeWidget=function(){
+return first_name + ' ' + last_name + ' Widget';
+    }
+    this.hire=function(employee){
+this.reports.push(employee)
+    }
+    this.fire=function(index){
+      this.reports.splice(index,1)
+    }
+  }
+}
 
 //Code Here
 
